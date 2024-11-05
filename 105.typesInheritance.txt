@@ -1,0 +1,53 @@
+/*
+There are 5 Types of Inheritance:-
+
+
+
+                                  A                         eg:- Rectangle
+1). Single/ Simple Inheritance    ^                                  ^
+                                  |                                  |
+                                  B                               Cuboid   
+
+
+2). Hierarchical Inheritance       C--> A <---B             eg:-   Toyota--->Car<---Skoda                      
+                                        ^                                     ^ 
+                                        |                                     |
+                                        C                                    BMW
+
+
+
+3). Multilevel Inheritance            A                     eg:-      point
+                                      ^                                 ^
+                                      |                                 |
+                                      B                               Circle
+                                      ^                                 ^
+                                      |                                 |    
+                                      C                              Cylinder
+
+                                                                  Phone  
+4). Multiple Inheritance               A                             ^                    
+                                       ^                             |
+                                       |                eg:-      smartphone---> camera
+                                       B--->C
+
+
+5). Hybrid Inheritance {when we have more than one type of Inheritance}
+        Combination of any of those 4 Inheritance.
+
+
+eg:-                         A 
+                            ^ ^
+                     _______| |_______      This is a Combination of Hierarchical and Multiple 
+                    |                 |
+                    B                 C 
+                    ^                 ^
+                    |_______   _______|
+                            | |
+                             D  
+
+
+
+
+
+
+

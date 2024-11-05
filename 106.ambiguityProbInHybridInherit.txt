@@ -1,0 +1,42 @@
+ This is a Combination of Hierarchical and Multiple 
+
+
+                             A fun()
+                            ^ ^
+                     _______| |_______
+                    |                 |
+            fun()   B                 C  fun()
+                    ^                 ^
+                    |_______   _______|
+                            | |
+                             D   Problem due to Multipath for fun()
+
+Problem :- Class D is getting fun(), {Which is originally written in Class A} through Class B as well as
+ class C.
+
+ Solution:- Here we have ambiguity that fun() should be called via B or C.
+              To remove this ambiguity, we have the concepts of VIRTUAL BASE CLASS 
+
+Class A{
+
+};
+Class B: Virtual public A{     //B and C are now Vitual Base classes and will solve the problem of ambiguity.
+                                      
+};
+Class C: Virtual public A{
+
+};
+Class D: public B, public C{
+
+
+};
+
+
+
+
+
+
+
+
+
+

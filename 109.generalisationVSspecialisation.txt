@@ -1,0 +1,46 @@
+1). Generalisation
+===================
+
+Base class dont actually exist in pratical world.
+
+eg:- car {car is a general term}
+but Innova is a car, swift, corella are also a car.
+
+shape {shape is also a general term}
+but Rectangle, Circle, Cylinder, triangle all these are a shape
+
+Child class were existing, and then we defined Base Class.
+i.e.
+  It follows Bottom-up Approach ----> Generalisation
+
+here, Base class does not have anything to give to its child class
+
+PURPOSE of Generalisation
+--------------------------------
+Polymorphism 
+eg:- Innova, swift, corella, BMW all are car.
+
+
+2). Specialisation
+===========================
+
+Parent was existing, Child was defined later.
+
+Child Borrowed many things from parent.
+
+It follows: Top-Down Approach --> Specialisation
+
+eg:- Innova <--- Fortuner 
+(Innova was already existing then they made Fortuner out of it)
+
+PURPOSE of Specialisation
+--------------------------------
+Share its features to its child class.
+
+==============================================================================
+
+
+i.e. There are 2 Purpose of Inheritance:-
+
+1). Achieve Polymorphism.
+2). To share its features to its Child Class.

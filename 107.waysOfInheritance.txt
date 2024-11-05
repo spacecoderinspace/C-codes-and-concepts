@@ -1,0 +1,61 @@
+There are 3 Ways of Inheritance :--
+
+Case 1 :- 
+
+class child : public parent
+ 
+When Inheriting Publicly 
+  a). protected becomes protected, and
+  b). public becomes public in Child Class
+
+Case 2 :-
+
+class child : protected parent
+
+When Inheriting protected
+ a). protected becomes protected, and
+ b). public also becomes protected in Child class
+
+Public and Protected Members of Parent: These members become protected in Child. They are accessible within 
+Child and any classes derived from Child, but they are not accessible to the outside world.
+
+Private Members of Parent: These members remain inaccessible to Child (and any further derived classes)
+because private members are only accessible within the class in which they are defined.
+
+Case 3 :-
+
+class child : private parent  {all becomes private}
+ 
+Public and Protected Members of Parent: These members become private in Child. They are accessible 
+within Child itself, but they cannot be accessed directly by any code outside Child, nor by any 
+classes derived from Child.
+
+Private Members of Parent: These members remain inaccessible to Child, as private members are only accessible 
+within the class where they are defined.
+
+
+============================================================
+Another Situation
+
+What if:-
+
+class Parent { /*...*/ };
+class Child : private Parent { /*...*/ };
+class Grandchild : public Child { /*...*/ };
+
+Here’s what happens with each level of inheritance and how it affects member accessibility,
+ behavior, and typical use cases.
+
+Access Modifiers and Inheritance in This Hierarchy
+Child : private Parent:
+
+This means that all public and protected members of Parent become private in Child.
+Thus, Parent’s public and protected members are accessible within Child but are not visible to Grandchild or any other classes derived from Child.
+For example, if Parent had a public method publicMethod(), it would be privately inherited by Child, 
+meaning Child could use it internally, but Grandchild would have no access to publicMethod().
+Grandchild : public Child:
+
+Grandchild publicly inherits from Child, meaning it directly accesses the public members of Child.
+However, because Child privately inherited from Parent, none of Parent’s members are accessible to Grandchild.
+Effectively, Grandchild only has access to Child’s public and protected members (if any) and has no knowledge
+of or access to Parent’s members.
