@@ -1,0 +1,6 @@
+/*
+useful for understanding access specifiers or accessibility of members of a class
+A class can be used in 2 ways:-
+1). A class can be derived from that class {is A Relation}
+2). Object of that class can be used {has A Relation}
+*/
