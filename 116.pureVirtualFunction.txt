@@ -1,0 +1,29 @@
+Q. Then why do we need to write functions in class car?
+Because we want those functions must to be implemented by sub/child classes.
+   We want to force the derived/child classes to implement or override these functions.{ If any class
+Inherit from class car, it must override those two functions.}
+
+To make it compulsory, write (=0) for those functions in parent class and need not write the functions
+body, Which makes it Pure Virtual functions.
+
+{a class with at least one pure virtual function is considered an abstract class. A pure virtual 
+function is a function declared with the syntax:
+
+virtual void functionName() = 0;
+
+This = 0 syntax indicates that the function does not have an implementation in the base class. 
+Since a class with a pure virtual function cannot be instantiated (because it has incomplete 
+functionality), it's classified as an abstract class. Any subclass of this abstract class must 
+provide an implementation for all pure virtual functions to be instantiated; otherwise, the subclass 
+will also be considered abstract.}
+
+i.e.
+Assigning Virtual function to 0 makes it Pure Virtual function.
+and those functions must be overriden by Derived classes, otherwise the derived classses will
+become ABSTRACT while class car is actually ABSTRACT {as we can not create object of that class}
+
+# When a class Inherit from abstract parent class, It also becomes Abstract, If its not overriding.
+so, Child class must override.
+And the purpose of pure virtual function is to achieve Polymorphism.
+
+#same mechainism in Java is called as Dynamic Method Dispatch.

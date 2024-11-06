@@ -1,0 +1,12 @@
+# Concrete function :- Concrete function means proper function with its body in or outside class.
+
+we can create Three types of classes in c++
+
+1). Base class with all Concrete functions. ----> Reusability
+
+2). Base class with some Concrete and some Pure Virtual Function. ---> Reusability and Polymorphism
+{its also abstract }
+
+3). Base class with all pure virtual function. ----> Polymorphism
+{such a parent class is called as Interface} 
+its also abstract.

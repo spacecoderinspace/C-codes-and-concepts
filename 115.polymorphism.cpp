@@ -45,9 +45,6 @@ c->start() is giving two differet outputs on 2 different calls. this is POLYMORP
  class car{
     public:
     virtual void start();
-    virtual void stop(); 
- }; 
-
-
-
+    virtual void stop();     
+ }; class car is written to achieve Polymorphism
 */
